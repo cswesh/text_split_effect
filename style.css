@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.title-box{
+    position: relative;
+    width: 400px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    position: absolute;
+    cursor: pointer;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.4s;
+
+}
+.title-1{
+    clip-path:polygon(0 0,100% 0,100% 100%, 50% 0, 0 100%);
+    color: #3a9995;
+}
+.title-2{
+    clip-path:polygon(0 100%,50% 0,100% 100%, 10% 100%, 0 100%);
+
+
+}
+.title-box:hover .title-1{
+    transform: translateY(-5px);
+}
+.title-box:hover .title-2{
+    transform: translateY(5px);
+}
